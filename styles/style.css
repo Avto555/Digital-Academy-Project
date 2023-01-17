@@ -1,0 +1,402 @@
+#logo {
+  width: 60px;
+  height: 50px;
+}
+#carouselExampleFade {
+  height: 100vh;
+  overflow: hidden;
+}
+/* .carousel {
+  margin-top: -25px;
+  margin-bottom: -60px;
+} */
+
+.carousel-item {
+  justify-content: center;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.carousel-item img {
+  width: 80%;
+  height: 90vh;
+}
+
+.carousel-caption {
+  border: 1px solid;
+  background-color: rgba(50, 50, 50, 0.6);
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  height: fit-content;
+}
+.carousel-caption h5 {
+  font-size: 60px;
+  color: #f7f7f7;
+  text-shadow: 2px 2px #000000;
+}
+.carousel-caption p {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px #000000;
+}
+.regBtn {
+  background-color: #008cba; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+  text-shadow: 2px 2px #000000;
+  margin-top: 100px;
+}
+
+.socialLinks ul {
+  display: flex;
+}
+/**************************** ABOUT PAGE ****************************/
+.aboutPage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.aboutPart1 {
+  display: flex;
+}
+.aboutPart1 img {
+  width: 50%;
+  height: 60vh;
+}
+.aboutPart1Text {
+  width: 50%;
+  margin-top: 180px;
+  text-align: center;
+  font-weight: 600;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+.aboutPart1Text h2 {
+  font-size: 40px;
+}
+.aboutPart1Text p {
+  font-size: 15px;
+  color: #118fb9;
+}
+.aboutPart1 a {
+  text-decoration: none;
+}
+
+/**************************** FAQ ****************************/
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1em;
+  line-height: 1.2em;
+  cursor: pointer;
+  user-select: none;
+}
+label after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -10px;
+  height: 20px;
+  content: ">";
+  line-height: 20px;
+  transform: rotate(90deg);
+}
+label p {
+  display: inline-block;
+  vertical-align: middle;
+}
+label i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.2em;
+  margin: 0 10px;
+  color: #20b7af;
+}
+
+section {
+  overflow: hidden;
+  height: 0;
+}
+section p {
+  margin: 0;
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #999;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+#question1:checked ~ label[for*="1"]:after,
+#question2:checked ~ label[for*="2"]:after,
+#question3:checked ~ label[for*="3"]:after,
+#question4:checked ~ label[for*="4"]:after {
+  transform: rotate(270deg);
+}
+
+#question1:checked ~ #answer1,
+#question2:checked ~ #answer2,
+#question3:checked ~ #answer3,
+#question4:checked ~ #answer4 {
+  height: auto;
+}
+
+.footerFAQ {
+  margin-top: 20px;
+}
+
+.wrapper {
+  margin-top: 100px;
+}
+
+/**************************** CONTACT US ****************************/
+.contactPageSec {
+  padding: 60px 0;
+  min-height: 100vh;
+}
+.contactInfo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contact-info-icon {
+  margin-bottom: 15px;
+}
+.contact-info-item {
+  background: #0d6efd;
+  padding: 30px 0px;
+}
+.contactPageSec .contact-page-form h2 {
+  color: #071c34;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 700;
+}
+.contact-page-form .col-md-6.col-sm-6.col-xs-12 {
+  padding-left: 0;
+}
+.contact-page-form.contact-form input {
+  margin-bottom: 5px;
+}
+.contact-page-form.contact-form textarea {
+  height: 110px;
+}
+.contact-page-form.contact-form input[type="submit"] {
+  background: #071c34;
+  width: 150px;
+  border-color: #071c34;
+}
+.contact-info-icon i {
+  font-size: 48px;
+  color: white;
+}
+.contact-info-text p {
+  margin-bottom: 0px;
+}
+.contact-info-text h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact-info-text span {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+}
+
+.contact-page-form input {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.contact-page-form .message-input {
+  display: inline-block;
+  width: 100%;
+  padding-left: 0;
+}
+.single-input-field textarea {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid black;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+.single-input-fieldsbtn input[type="submit"] {
+  background: #008cba none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 0;
+  text-transform: capitalize;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.single-input-fieldsbtn input[type="submit"]:hover {
+  background: #071c34;
+  transition: all 0.4s ease-in-out 0s;
+  border-color: #071c34;
+}
+.single-input-field h4 {
+  color: #464646;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.contact-page-form {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.contact-page-map {
+  margin-top: 36px;
+}
+.contact-page-form form {
+  padding: 20px 15px 0;
+}
+
+/*************************** REGISTRATION PAGE **************************/
+.register main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register .form {
+  padding: 20px 15px;
+  min-height: 250px;
+
+  /*გამოვიყენე coolors.co/gradient-maker/*/
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(0, 100%, 43%, 1) 50%,
+    hsla(48, 100%, 50%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(0, 100%, 43%, 1) 50%,
+    hsla(48, 100%, 50%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(0, 100%, 43%, 1) 50%,
+    hsla(48, 100%, 50%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#DD0000", GradientType=1 );
+}
+
+.register input {
+  display: block;
+  outline: none;
+  padding: 15px 10px;
+  margin: 30px;
+  border: solid 1px transparent;
+  background: none;
+  color: white;
+  width: 200px;
+  transition: border-color 1s;
+}
+
+.register input:focus {
+  border-color: royalblue;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.register .form button {
+  padding: 10px;
+  color: white;
+  background: royalblue;
+  border: none;
+  width: 200px;
+  margin-left: 30px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.register .form button:hover {
+  background: rgb(114, 149, 255);
+}
+
+.register .action {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.register .load {
+  position: relative;
+  margin: 2px 5px;
+  padding-bottom: 5px;
+  border-bottom: solid 2px transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.register .load.show {
+  border-bottom-color: royalblue;
+}
+
+.register .form a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 15px;
+  text-align: center;
+  transition: 0.5s;
+}
+.register .form a:hover {
+  color: royalblue;
+}
+
+.register .login {
+  display: none;
+}
+.register .reg {
+  display: none;
+}
+
+.register .show-page {
+  display: block;
+  animation: show-page 1s;
+}
